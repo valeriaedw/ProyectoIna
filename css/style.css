@@ -1,0 +1,466 @@
+/* ESTE PROYECTO SE ESTA CREANDO CON UN ENFOQUE DE MOVILFIRTS, POR LO CUAL SE INICIA DE LA VISUALIZACION DE MOVIL HACIA ARRIBA, TODOS LOS ESTILOS ESTAN PENSADOS EN MOVIL*/
+
+
+/* -----------------------
+   ESTILOS GENERALES DE LA PAGINA
+   ----------------------*/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1rem -> 10px */
+}
+
+a, a:hover, a:focus, a:active, a:link {
+    text-decoration: none !important;
+    color: white;
+    text-decoration: dotted;
+}
+/* Mis estilos  */
+a, .navegacion a, input:hover, input:hover{
+    transition: 300ms;
+    border: 6px solid transparent;
+}
+a:hover, a:hover, input:hover{
+    /* scale: 1.1 !important; */
+    border: 6px solid gray;
+}
+
+.mapa-contenedor{
+    background-color: rgb(14, 13, 13);
+    color: white;
+    padding: 5px;
+   
+}
+
+.mensaje-red{
+    color: red;
+    font-weight: 600;
+}
+
+.msj{
+    margin: 15px;
+    text-align: right;
+}
+
+.mapa-contenedor h1{
+    text-align: center;
+}
+.navegacion a{
+    scale: 1.2 !important;
+
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+
+/* -----------------------
+   ESTILOS GLOBALES DE LA PAGINA
+   ----------------------*/
+
+.contenedor {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h2,
+h4,
+h5 {
+    font-family: 'PT Sans', sans-serif;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+h4,
+h5 {
+    font-size: 2.8rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+
+/* -----------------------
+   UTILIDADES DE LA PAGINA
+   ----------------------*/
+
+.centrar-texto {
+    text-align: center;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+/* botones */
+
+.btn {
+    display: block;
+    text-align: center;
+    padding: 1rem 3rem;
+    margin: 2rem 0;
+    color: white;
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2rem;
+    flex: 0 0 100%;
+}
+.btn:hover {
+    cursor: pointer;
+}
+.btn-primary {
+    background-color: black;
+}
+.btn-secundario {
+    background-color: #784d3c;
+    /* ir a los media queries */
+}
+
+/* estilos del Grid */
+
+/* -----------------------
+   ESTILOS DEL HEADER 
+   ----------------------*/
+
+.site-header {
+
+    background: 
+	linear-gradient( rgba(70, 122, 88, 0.342), rgb(0, 0, 0), rgba(42, 129, 42, 0.514)), url('./../mutimedia/imagenes/te (7).jpg');
+    
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 60rem;
+
+}
+.site-header a {
+    color: white;
+    text-decoration: none;
+}
+
+.site-header h1 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.site-header h1 span {
+    font-weight: 700;
+}
+
+/* navegacion texto */
+.navegacion a {
+    text-align: center;
+    display: block;
+    font-size: 1.8rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* header texto */
+
+.texto-header {
+    color: #fff;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.texto-header p {
+    font-size: 2.2rem;
+}
+
+
+/* -----------------------
+   ESTILOS DE CONTENIDO PRINCIPAL DEL CAFE
+   ----------------------*/
+
+.contenido-principal {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.blog,
+.cursos {
+ 
+    flex: 0 0 100%;
+}
+
+
+.cursos {
+    /* cambiar el orden de los articulo sin cambiar el html, esto se hace con flexbox */
+    order: -1;
+}
+
+
+/* esta parte es opcional por si quiere ver el diseño de otra forma  */
+
+
+/* -----------------------
+   OPCIONAL OPCIONAL
+   ----------------------*/
+
+.entrada-blog {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.entrada-blog:last-of-type {
+    border: none;
+}
+
+
+/* trabajamos con el ASIDE */
+
+.cursos-lista {
+    padding: 0;
+    list-style: none;
+}
+
+.curso {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #e1e1e1;
+    /* vamos a la linea 335 */
+}
+
+.curso:last-of-type {
+    border: none;
+}
+
+.curso p {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.curso p span {
+    font-weight: 400;
+    /* ver cambios en el h2 */
+    /* ir a utilidades a trabajar con los botones */
+}
+
+.curso p.descripcion {
+    font-weight: 400;
+    /* vamnos a la linea 212 */
+}
+
+
+/* -----------------------
+   ESTILOS DEL FOOTER DEL CAFE
+   ----------------------*/
+
+footer{
+    background: 
+	linear-gradient( rgba(70, 122, 88, 0.342), rgb(0, 0, 0), rgba(42, 129, 42, 0.514));
+}
+
+.site-footer {
+    background-color: black;
+    padding: 3rem;
+    margin-top: 4rem;
+}
+
+.site-footer p {
+    color: white;
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+}
+
+.site-footer p span {
+    font-weight: 700;
+    /* vamos a navegacion */
+}
+
+
+/* -----------------------
+   ESTILOS DEL MAIN DE NOSOTROS
+   ----------------------*/
+
+
+/* vamos media querie de MAIN */
+
+
+/* -----------------------
+   ESTILOS DEL MAIN DE CURSOS
+   ----------------------*/
+
+
+/* vamos a la linea 233 */
+
+
+/* -----------------------
+   ESTILOS DEL SECTION DE CONTACTENOS
+   ----------------------*/
+
+.formulario-contacto {
+    background-color: white;
+    padding: 5rem;
+    /* vamos al media queries de gris linea 338 */
+}
+
+.formulario-contacto .campo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.formulario-contacto .campo label {
+    flex: 0 0 8rem;
+}
+
+.formulario-contacto .campo input:not([type="submit"]),
+.formulario-contacto textarea {
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+}
+
+.formulario-contacto textarea {
+    height: 20rem;
+}
+
+
+/* vamos a la linea 340 */
+
+/* -----------------------
+   ESTILOS DEL SITEMAP 
+   ----------------------*/
+   .level-0, .level-1{
+       font-size: 22px;
+       font-weight: 600;
+   }
+
+
+
+
+
+/* -----------------------
+   MEDIA QUERIES HEADER
+   ----------------------*/
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+   
+    .navegacion a {
+        display: inline;
+        margin-right: 2rem;
+        
+    }
+
+    .navegacion a:last-of-type {
+        margin: 0;
+    }
+    .texto-header {
+        margin-top: 15rem;
+    }
+}
+
+
+/* -----------------------
+   MEDIA QUERIES CONTENIDO PRINCIPAL DEL CAFE
+   ----------------------*/
+
+@media (min-width: 768px) {
+    .contenido-principal {
+        justify-content: space-between;
+    }
+    .blog {
+        flex-basis: 66.6%;
+        order: -1;
+    }
+    .cursos {
+        flex-basis: calc(33.3% - 4rem);
+    }
+}
+
+
+/* media queries de los botones */
+
+@media (min-width: 768px) {
+    .btn {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+
+
+/* -----------------------
+   MEDIA QUERIES MAIN
+   ----------------------*/
+
+@media (min-width: 768px) {
+    .grid {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .centrar-columnas {
+        justify-content: center;
+    }
+    .columnas-4 {
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+    .columnas-6 {
+        flex: 0 0 calc(50% - 1rem);
+    }
+    .columnas-8 {
+        flex: 0 0 calc(66.6% - 1rem);
+    }
+    .columnas-10 {
+        flex: 0 0 calc(83.6% - 1rem);
+    }
+    /* vamos al grid de este media queries */
+    /* vamos al media querie de abajo */
+    .columnas-12 {
+        flex: 0 0 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .formulario-contacto {
+        margin-top: -10rem;
+    }
+    .formulario-contacto .enviar {
+        display: flex;
+        justify-content: flex-end;
+    }
+    /* vamos a los estilos del contactos */
+}
+
